@@ -1,0 +1,165 @@
+.header__container {
+  width: 100vw;
+}
+
+.Alumini-Number {
+  margin-left: 30px;
+  margin-bottom: 20px;
+}
+.Alumini-Number h2 {
+  color: #464660;
+}
+.Speaker {
+  display: grid;
+  grid: "image info";
+  grid-gap: 20px;
+}
+.Speaker-image {
+  grid-area: "image";
+}
+.Speaker-Info {
+  grid-area: "info";
+  margin-top: 2em;
+}
+.Speaker-Info > h2 {
+  margin-bottom: 20px;
+}
+.alumni-image {
+  width: 400px;
+  height: auto;
+  margin-left: 30px;
+  margin-bottom: 20px;
+}
+span {
+  color: #0072b5;
+}
+#login_button {
+  position: absolute;
+  right: 10px;
+  display: block;
+}
+.bottom-buttons {
+  display: grid;
+  grid-area: "button";
+  margin-top: 5em;
+  grid: "question meetlink Recording Minutes";
+  grid-gap: 10px;
+  width: 100%;
+}
+
+.button-1 {
+  padding: 15px 45px;
+  background-image: linear-gradient(to right, #45a247 0%, #283c86 100%);
+  transition: 0.5s;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  background-size: 200% auto;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+}
+
+.button-1:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+.button-2 {
+  padding: 15px 45px;
+  background-image: linear-gradient(to right, #8e0e00 0%, #1f1c18 100%);
+  transition: 0.5s;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  background-size: 200% auto;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+}
+
+.button-2:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+.button {
+  padding: 15px 45px;
+  background-image: linear-gradient(
+    to right,
+    #77a1d3 0%,
+    #79cbca 51%,
+    #77a1d3 100%
+  );
+  transition: 0.5s;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  background-size: 200% auto;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.button:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Code for the responsive mobile version */
+
+@media all and (max-width: 768px) {
+  /* General for mobile */
+  .header__container {
+    flex-direction: row;
+  }
+  .header__item img {
+    height: 10px;
+  }
+  div.container__contactUs {
+    margin: 0px auto;
+    width: 100vw;
+  }
+  .button {
+    margin: 0 auto;
+  }
+  .alumni-image {
+    width: 80vw;
+  }
+  .Speaker {
+    display: flex;
+    flex-direction: column;
+  }
+  .Speaker-Info {
+    font-size: 70%;
+    padding: 20px;
+  }
+  .bottom-buttons {
+    margin: 0px;
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .button-1,
+  .button-2 {
+    width: 70vw;
+  }
+  a.button--first {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  div.container {
+    margin: 50px 0 0 0;
+  }
+}

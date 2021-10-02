@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alumni Affairs IIITDM</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="StudentPage.css" />
+  </head>
+  <body>
+    <div class="header">
+      <div class="header__container">
+        <a href="student_page.php">
+          <div class="header__item aa_logo">
+            <img src="assets/images/icons/aa_logo.png" alt="AA_LOGO" />
+          </div>
+        </a>
+        <div class="header__item">
+          <h1>
+            <?php if($google_signin == 0){  echo "Welcome, ".$row['name']."";} else{ echo "Welcome, ".$name."!!"; }?>
+          </h1>
+        </div>
+        <a href="http://iiitdm.ac.in/" target="_blank">
+          <div class="header__item">
+            <img
+              src="assets/images/icons/iiitdmlogo.png"
+              alt="IIITDMK LOGO"
+              class=".iiitdmk"
+            />
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="container">
+      <div class="container__contactUs">
+        <a href="login.php" class="button--first">
+          <button class="button" class="button--first">
+            2021 Graduates Login
+          </button>
+        </a>
+      </div>
+    </div>
+    <br />
+    <br />
+    <div class="Alumini-Number">
+      <h2>Alumni Talk # 2</h2>
+    </div>
+    <div class="Speaker">
+      <div class="Speaker-image">
+        <img
+          src="assets/images/alumnitalks/AlumniTalks2.png"
+          class="alumni-image"
+        />
+      </div>
+      <div class="Speaker-Info">
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <h2><span>Speaker</span> : Niveditha Raveendran.</h2>
+        <h2>
+          <span>Bio : </span>Software Engineer at
+          <span style="color: #5d8233">Facebook INC</span>,Worked at
+          <span style="color: #ba135d">ORACLE</span> as an SDE For Two Years
+          Graduated from Georga Institute of Technology.
+        </h2>
+        <h2>
+          <span>Date and time of talk :</span> 6th October 2021, 10AM - 11AM.
+        </h2>
+        <div class="bottom-buttons">
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSeQYhFJQFrMqjNkp_tut38igftSM1l0RpD_Q6XjWU40YB3g0A/viewform?usp=sf_link"
+            title="Ask Your questions for Niveditha here"
+            target="_blank"
+            ><button class="button-1">Q & A</button></a
+          >
+
+          <a
+            href="https://meet.google.com/tqn-nzxe-ngg"
+            title="Meet Link"
+            target="_blank"
+            ><button class="button-1">Meet Link</button></a
+          >
+
+          <a
+            href="#"
+            title="Recording will be available after the meet"
+            target="_blank"
+            ><button class="button-2">Meet Recording</button></a
+          >
+
+          <a
+            href="#"
+            title="Minutes of the meet will be available after the meet"
+            target="_blank"
+            ><button class="button-2">Minutes</button></a
+          >
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
